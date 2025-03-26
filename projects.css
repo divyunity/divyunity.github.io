@@ -1,0 +1,241 @@
+/* Projects Page Specific Styles */
+
+/* Projects Hero Section */
+.projects-hero {
+    height: 50vh;
+    background: linear-gradient(135deg, rgba(74, 108, 247, 0.9), rgba(142, 45, 226, 0.9)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+.projects-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease;
+}
+
+.projects-hero-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 108, 247, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project {
+    padding: 10px 20px;
+    background: white;
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.view-project:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.project-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.project-info p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-tech span {
+    padding: 6px 12px;
+    background-color: rgba(74, 108, 247, 0.1);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, rgba(74, 108, 247, 0.9), rgba(142, 45, 226, 0.9)), url('contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-content .btn {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.contact-content .btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+}
+
+/* Styles for active navigation link */
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-hero {
+        height: 40vh;
+    }
+    
+    .projects-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .projects-hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-hero {
+        height: 35vh;
+    }
+    
+    .projects-hero-content h1 {
+        font-size: 2rem;
+    }
+} 
