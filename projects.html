@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Taluja - Projects</title>
+    <title>Dev Arora - Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">DT</div>
+            <div class="logo">DA</div>
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#skills">Skills</a></li>
@@ -29,121 +37,45 @@
         <section class="projects-hero">
             <div class="projects-hero-content">
                 <h1>My Projects</h1>
-                <p>Explore my journey in AI development through these projects</p>
+                <p>Explore my journey in development through these projects</p>
             </div>
         </section>
 
         <section class="projects-grid">
-            <!-- Project 1 -->
+            <!-- Project 1 - Survivor Academy -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project1.jpg" alt="AI Image Generation Project">
+                    <img src="images/survivor-academy.jpg?v=2" alt="Survivor Academy Game">
                     <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
+                        <a href="https://github.com/divyunity/survivor-academy" class="view-project">View Project</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>AI Image Generation System</h3>
-                    <p>A deep learning model that generates realistic images based on text descriptions using GANs and transformer architectures.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>TensorFlow</span>
-                        <span>Midjourney API</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project2.jpg" alt="Virtual Assistant">
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Intelligent Virtual Assistant</h3>
-                    <p>A personalized AI assistant that helps users manage tasks, schedule appointments, and answer questions using natural language processing.</p>
-                    <div class="project-tech">
-                        <span>OpenAI</span>
-                        <span>Node.js</span>
-                        <span>React</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project3.jpg" alt="Video Editing AI">
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Automated Video Editing Tool</h3>
-                    <p>An AI-powered application that automatically edits raw video footage by identifying key moments and creating professional transitions.</p>
-                    <div class="project-tech">
-                        <span>Descript</span>
-                        <span>Python</span>
-                        <span>OpenCV</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project4.jpg" alt="Unity AR Game">
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>AR Educational Game</h3>
-                    <p>An augmented reality game that helps children learn science concepts through interactive 3D models and engaging puzzles.</p>
+                    <h3>Survivor Academy</h3>
+                    <p>A 2D Roguelike game with integrated leaderboards and data saving using Azure PlayFab. Players collect orbs to level up, select powerups, and earn XP and gold to buy and upgrade pets based on their performance.</p>
                     <div class="project-tech">
                         <span>Unity</span>
                         <span>C#</span>
-                        <span>ARCore</span>
+                        <span>Azure PlayFab</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 5 -->
+            <!-- Project 2 - Jumpoo -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="project5.jpg" alt="Sentiment Analysis">
+                    <img src="images/jumpoo-logo.png?v=1" alt="Jumpoo Game">
                     <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
+                        <a href="https://github.com/divyunity/jumpoo" class="view-project">View Project</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Social Media Sentiment Analyzer</h3>
-                    <p>A tool that analyzes social media posts to determine public sentiment about products or brands using natural language processing.</p>
+                    <h3>Jumpoo</h3>
+                    <p>A 3D Jump Game where players collect points from in-game items. Every 10 levels, players earn stackable sweet gifts viewable in the Gift Collection Menu. Features persistent player data saving to continue where they left off, and endless levels for continuous gameplay.</p>
                     <div class="project-tech">
-                        <span>Hugging Face</span>
-                        <span>Python</span>
-                        <span>Flask</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project6.jpg" alt="Firebase App">
-                    <div class="project-overlay">
-                        <a href="#" class="view-project">View Project</a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>AI Study Companion</h3>
-                    <p>A mobile application that helps students organize study materials and provides personalized learning recommendations.</p>
-                    <div class="project-tech">
-                        <span>Firebase</span>
-                        <span>React Native</span>
-                        <span>TensorFlow Lite</span>
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Backend Integration</span>
                     </div>
                 </div>
             </div>
@@ -153,7 +85,7 @@
             <div class="contact-content">
                 <h2>Interested in collaborating?</h2>
                 <p>I'm always open to discussing new projects and opportunities.</p>
-                <a href="mailto:aaradevelopah06@gmail.com" class="btn primary">Get in touch</a>
+                <a href="mailto:aroradevyansh06@gmail.com" class="btn primary">Get in touch</a>
             </div>
         </section>
     </main>
@@ -161,16 +93,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <div class="logo">DT</div>
-                <p>AI Developer / Designer</p>
+                <div class="logo">DA</div>
+                <p>Developer</p>
             </div>
             <div class="social-links">
                 <a href="https://github.com/divyunity" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dev-taluja/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/devansharora11/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/_arora.dev_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Dev Taluja. All rights reserved.</p>
+                <p>&copy; 2024 Dev Arora. All rights reserved.</p>
             </div>
         </div>
     </footer>
